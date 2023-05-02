@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+    <link rel="stylesheet" href="./resources/css/styles.css"> 
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <a href="index.html" class="desktop logo">Gabriel Chan</a>
+        <nav>
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--About Section-->
+        <div class="about">
+            <div class="text-container">
+                <h2>About Me</h2>
+                <p>Welcome to my Portfolio Website. My name is Gabriel Chan. I am an 
+                    aspiring and diligent Software Developer with knowledge and experience with 
+                    many programming languages, tools and practices. I value organization, 
+                    communication and team cohesion above all else.</p>
+                    
+                <p>I graduated from University of Toronto as a Computer Science Specialist in 2021 
+                    and obtained a Bachelor's degree in this subject. During this time, I learned 
+                    how to use a wide range of programming languages like Python, Java and C. I 
+                    was also introduced to new technologies such as Unity and Postman and I was 
+                    assigned many group projects where I learned how to collaborate with others 
+                    effectively. I joined Jarvis in October where I was further trained in how to 
+                    use new technologies such as Docker, Maven and JDBC and how to build programs 
+                    in an effective and efficient manner. While I learned about how to use these 
+                    tools, Jarvis also taught me about many effective programming practices such 
+                    as the Scrum framework, Test-Driven Development as well as Continuous 
+                    Integration. Currently, I am persuing a professional certification in 
+                    Full-Stack Engineering and Design at Codecademy while also learning about 
+                    HTML, CSS and Javascript.</p>
+            </div>
+            <div class="image-container">
+                <img src="./resources/images/IMG_1397.JPG" alt="A photo of me">
+            </div>
+        </div>
+        <!--Projects Section-->
+        <div class="projects">
+            <div class="text-container">
+                <h2>Projects</h2>
+                <div class="headline" id="headline-linux">
+                    <img src="./resources/images/arrowhead-right.png" id="arrow-right-linux">
+                    <img src="./resources/images/arrowhead-down.png" id="arrow-down-linux" style="display: none;">
+                    <h3>Linux Cluster Monitor</h3>
+                </div>
+                <div class="project-content" id="linux-cluster-monitor">
+                    <h4>
+                        <a href="https://github.com/jarviscanada/jarvis_data_eng_GabrielChan/tree/master/linux_sql">
+                            Source Code
+                        </a>
+                    </h4>
+                    <p>
+                        The Jarvis Linux Cluster Administration manages about 10 nodes each using the 
+                        CentOS 7 Linux distribution. These nodes are also connected through a switch and 
+                        are able to communicate using internal IPv4 addresses. The purpose of this project 
+                        is to track and record the performance of each node as well as the resources each 
+                        node uses. This data will be stored in an RDBMS database and used to generate 
+                        reports for plans regarding future nodes.
+                    </p>
+                </div>
+                <div class="headline" id="headline-twitter">
+                    <img src="./resources/images/arrowhead-right.png" id="arrow-right-twitter">
+                    <img src="./resources/images/arrowhead-down.png" id="arrow-down-twitter" style="display: none;">
+                    <h3>Twitter CRUD Application</h3>
+                </div>
+                <div class="project-content" id="twitter-crud-application">
+                    <h4>
+                        <a href="https://github.com/jarviscanada/jarvis_data_eng_GabrielChan/tree/master/core_java/twitter">
+                            Source Code
+                        </a>
+                    </h4>
+                    <p>
+                        The Twitter CRUD app accesses the user's Twitter account through a set of key and 
+                        secret tokens and sends HTTP requests to perform CRUD operations using Twitter's 
+                        REST API. This application allows the user to create, retrieve and delete Tweets 
+                        using a command line interface. Core technologies used in the implementation of 
+                        this application include, OAuth, Google GSON, Mockito, JUnit, Maven and Docker.
+                    </p>
+                </div>
+                <div class="headline" id="headline-trash">
+                    <img src="./resources/images/arrowhead-right.png" id="arrow-right-trash">
+                    <img src="./resources/images/arrowhead-down.png" id="arrow-down-trash" style="display: none;">
+                    <h3>Trash Panda Video Game</h3>
+                </div>
+                <div class="project-content" id="trash-panda-video-game">
+                    <h4>
+                        <a href="https://github.com/jialori/TrashPanda">
+                            Source Code
+                        </a>
+                    </h4>
+                    <p>
+                        I developed a video game using the Unity engine alongside peers including fellow 
+                        developers, artists, animators and composers. The player takes the role of a 
+                        raccoon mom causing as much damage as possible to a construction site in an 
+                        effort to protect her children. I designed the artificial intelligence of 
+                        enemies (construction workers) as well as a handful of UI elements with C# 
+                        scripts.
+                    </p>
+                    <video src="./resources/images/Trailer2019f.mp4" controls>
+                        Video not available.
+                    </video>
+                </div>
+                <div class="headline" id="headline-portfolio">
+                    <img src="./resources/images/arrowhead-right.png" id="arrow-right-portfolio">
+                    <img src="./resources/images/arrowhead-down.png" id="arrow-down-portfolio" style="display: none;">
+                    <h3>Portfolio Website</h3>
+                </div>
+                <div class="project-content" id="portfolio-website">
+                    <p style="padding: 0; margin-top: 0;">
+                        Of course, this website is also one of my projects! External website design tools 
+                        like Wix or Webflow were not used in the design of this website; it was designed 
+                        merely with Visual Studio Code and my knowledge of HTML, CSS and Javascript!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--Skills Section-->
+        <div class="skills">
+            <div class="text-container">
+                <h2>Skills</h2>
+                <h3>Intermediate:</h3>
+            </div>
+            <div class="image-container">
+                <div class="logo-container" id="python-logo">
+                    <img src="./resources/images/python-logo.png">
+                    <div class="logo-overlay" id="python-overlay">
+                        <h3>Python</h3>
+                    </div>
+                </div>
+                <div class="logo-container" id="java-logo">
+                    <img src="./resources/images/java-logo.png">
+                    <div class="logo-overlay" id="java-overlay">
+                        <h3>Java</h3>
+                    </div>
+                </div>
+                <div class="logo-container" id="html-logo">
+                    <img src="./resources/images/html-logo.png">
+                    <div class="logo-overlay" id="html-overlay">
+                        <h3>HTML</h3>
+                    </div>
+                </div>
+                <div class="logo-container" id="css-logo">
+                    <img src="./resources/images/css-logo.png">
+                    <div class="logo-overlay" id="css-overlay">
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+                <div class="logo-container" id="javascript-logo">
+                    <img src="./resources/images/javascript-logo.png">
+                    <div class="logo-overlay" id="javascript-overlay">
+                        <h3>Javascript</h3>
+                    </div>
+                </div>
+                <div class="logo-container" id="git-logo">
+                    <img src="./resources/images/git-logo.png">
+                    <div class="logo-overlay" id="git-overlay">
+                        <h3>Git</h3>
+                    </div>
+                </div>
+                <div class="logo-container" id="github-logo">
+                    <img src="./resources/images/github-logo.png">
+                    <div class="logo-overlay" id="github-overlay">
+                        <h3>Github</h3>
+                    </div>
+                </div>
+                <div class="logo-container" id="agile-logo">
+                    <img src="./resources/images/agile-logo.png">
+                    <div class="logo-overlay" id="agile-overlay">
+                        <h3>Agile</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="text-container">
+                <h3>Basic:</h3>
+            </div>
+            <div class="image-container">
+                <div class="logo-container" id="sql-logo">
+                    <img src="./resources/images/sql-logo.png">
+                    <div class="logo-overlay" id="sql-overlay">
+                        <h3>SQL</h3>
+                    </div>
+                </div>
+                <div class="logo-container" id="c-logo">
+                    <img src="./resources/images/c-logo.png">
+                    <div class="logo-overlay" id="c-overlay">
+                        <h3>C</h3>
+                    </div>
+                </div>
+                <div class="logo-container" id="bash-logo">
+                    <img src="./resources/images/bash-logo.png">
+                    <div class="logo-overlay" id="bash-overlay">
+                        <h3>Bash</h3>
+                    </div>
+                </div>
+                <div class="logo-container" id="docker-logo">
+                    <img src="./resources/images/docker-logo.png">
+                    <div class="logo-overlay" id="docker-overlay">
+                        <h3>Docker</h3>
+                    </div>
+                </div>
+                <div class="logo-container" id="maven-logo">
+                    <img src="./resources/images/maven-logo.png">
+                    <div class="logo-overlay" id="maven-overlay">
+                        <h3>Maven</h3>
+                    </div>
+                </div>
+                <div class="logo-container" id="unity-logo">
+                    <img src="./resources/images/unity-logo.png">
+                    <div class="logo-overlay" id="unity-overlay">
+                        <h3>Unity</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Contacts Section-->
+        <div class="contacts">
+            <div class="text-container">
+                <h2>Contact</h2>
+                <div class="contact-method">
+                    <img src="./resources/images/gmail-logo.png">
+                    <p><em>gabriel.chan166@gmail.com</em></p>
+                </div>
+                <div class="contact-method">
+                    <img src="./resources/images/phone-logo.png">
+                    <p><em>647-938-8337</em></p>
+                </div>
+                <div class="contact-method">
+                    <img src="./resources/images/linkedin-logo.png">
+                    <p><a href="https://www.linkedin.com/in/gabriel-chan-525115164" target="_blank">
+                        <em>linkedin.com/in/gabriel-chan-525115164</em>
+                    </a></p>
+                </div>
+                <div class="contact-method">
+                    <img src="./resources/images/github-logo.png">
+                    <p><a href="https://www.github.com/GabrielChan1" target="_blank">
+                        <em>github.com/GabrielChan1</em>
+                    </a></p>
+                </div>
+                <h3>
+                    Please only use my phone number to text and send SMS messages. Do not call me out of
+                    the blue. If you must call me, please send me advance notice through another method 
+                    first. Any phone calls I receive from unrecognized numbers without prior notice will 
+                    be treated as spam.
+                </h3>
+            </div>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer>
+
+    </footer>
+    <script src="./resources/js/main.js"></script>
+</body>
+</html>
