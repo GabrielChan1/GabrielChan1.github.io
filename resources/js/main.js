@@ -1,8 +1,11 @@
+let jammmingHeadline = document.getElementById('headline-jammming');
 let linuxHeadline = document.getElementById('headline-linux');
 let twitterHeadline = document.getElementById('headline-twitter');
 let trashHeadline = document.getElementById('headline-trash');
 let portfolioHeadline = document.getElementById('headline-portfolio');
 
+let jammmingRightArrow = document.getElementById('arrow-right-jammming');
+let jammmingDownArrow = document.getElementById('arrow-down-jammming');
 let linuxRightArrow = document.getElementById('arrow-right-linux');
 let linuxDownArrow = document.getElementById('arrow-down-linux');
 let twitterRightArrow = document.getElementById('arrow-right-twitter');
@@ -12,6 +15,7 @@ let trashDownArrow = document.getElementById('arrow-down-trash');
 let portfolioRightArrow = document.getElementById('arrow-right-portfolio');
 let portfolioDownArrow = document.getElementById('arrow-down-portfolio');
 
+let jammmingContent = document.getElementById('jammming-web-application');
 let linuxContent = document.getElementById('linux-cluster-monitor');
 let twitterContent = document.getElementById('twitter-crud-application');
 let trashContent = document.getElementById('trash-panda-video-game');
@@ -25,6 +29,7 @@ let javascriptLogo = document.getElementById('javascript-logo');
 let gitLogo = document.getElementById('git-logo');
 let githubLogo = document.getElementById('github-logo');
 let agileLogo = document.getElementById('agile-logo');
+let reactLogo = document.getElementById('react-logo');
 let sqlLogo = document.getElementById('sql-logo');
 let cLogo = document.getElementById('c-logo');
 let bashLogo = document.getElementById('bash-logo');
@@ -40,12 +45,26 @@ let javascriptOverlay = document.getElementById('javascript-overlay');
 let gitOverlay = document.getElementById('git-overlay');
 let githubOverlay = document.getElementById('github-overlay');
 let agileOverlay = document.getElementById('agile-overlay');
+let reactOverlay = document.getElementById('react-overlay');
 let sqlOverlay = document.getElementById('sql-overlay');
 let cOverlay = document.getElementById('c-overlay');
 let bashOverlay = document.getElementById('bash-overlay');
 let dockerOverlay = document.getElementById('docker-overlay');
 let mavenOverlay = document.getElementById('maven-overlay');
 let unityOverlay = document.getElementById('unity-overlay');
+
+jammmingHeadline.addEventListener('click', () => {
+    if (jammmingRightArrow.style.display == 'none') {
+        jammmingContent.style.display = 'none';
+        jammmingDownArrow.style.display = 'none';
+        jammmingRightArrow.style.display = 'block';
+    }
+    else {
+        jammmingContent.style.display = 'block';
+        jammmingDownArrow.style.display = 'block';
+        jammmingRightArrow.style.display = 'none';
+    }
+});
 
 linuxHeadline.addEventListener('click', () => {
     if (linuxRightArrow.style.display == 'none') {
@@ -115,6 +134,8 @@ githubLogo.addEventListener('mouseover', () => {githubOverlay.style.display = 'f
 githubLogo.addEventListener('mouseout', () => {githubOverlay.style.display = 'none';});
 agileLogo.addEventListener('mouseover', () => {agileOverlay.style.display = 'flex';});
 agileLogo.addEventListener('mouseout', () => {agileOverlay.style.display = 'none';});
+reactLogo.addEventListener('mouseover', () => {reactOverlay.style.display = 'flex';});
+reactLogo.addEventListener('mouseout', () => {reactOverlay.style.display = 'none';});
 sqlLogo.addEventListener('mouseover', () => {sqlOverlay.style.display = 'flex';});
 sqlLogo.addEventListener('mouseout', () => {sqlOverlay.style.display = 'none';});
 cLogo.addEventListener('mouseover', () => {cOverlay.style.display = 'flex';});
