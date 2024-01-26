@@ -36,6 +36,8 @@ let bashLogo = document.getElementById('bash-logo');
 let dockerLogo = document.getElementById('docker-logo');
 let mavenLogo = document.getElementById('maven-logo');
 let unityLogo = document.getElementById('unity-logo');
+let nodeLogo = document.getElementById('node-logo');
+let awsLogo = document.getElementById('aws-logo');
 
 let pythonOverlay = document.getElementById('python-overlay');
 let javaOverlay = document.getElementById('java-overlay');
@@ -52,6 +54,8 @@ let bashOverlay = document.getElementById('bash-overlay');
 let dockerOverlay = document.getElementById('docker-overlay');
 let mavenOverlay = document.getElementById('maven-overlay');
 let unityOverlay = document.getElementById('unity-overlay');
+let nodeOverlay = document.getElementById('node-overlay');
+let awsOverlay = document.getElementById('aws-overlay');
 
 jammmingHeadline.addEventListener('click', () => {
     if (jammmingRightArrow.style.display == 'none') {
@@ -148,3 +152,7 @@ mavenLogo.addEventListener('mouseover', () => {mavenOverlay.style.display = 'fle
 mavenLogo.addEventListener('mouseout', () => {mavenOverlay.style.display = 'none';});
 unityLogo.addEventListener('mouseover', () => {unityOverlay.style.display = 'flex';});
 unityLogo.addEventListener('mouseout', () => {unityOverlay.style.display = 'none';});
+nodeLogo.addEventListener('mouseover', () => {nodeOverlay.style.display = 'flex';});
+nodeLogo.addEventListener('mouseout', () => {nodeOverlay.style.display = 'none';});
+awsLogo.addEventListener('mouseover', () => {awsOverlay.style.display = 'flex';});
+awsLogo.addEventListener('mouseout', () => {awsOverlay.style.display = 'none';});
