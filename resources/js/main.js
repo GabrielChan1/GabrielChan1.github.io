@@ -38,6 +38,7 @@ let mavenLogo = document.getElementById('maven-logo');
 let unityLogo = document.getElementById('unity-logo');
 let nodeLogo = document.getElementById('node-logo');
 let awsLogo = document.getElementById('aws-logo');
+let azureLogo = document.getElementById('azure-logo');
 
 let pythonOverlay = document.getElementById('python-overlay');
 let javaOverlay = document.getElementById('java-overlay');
@@ -56,6 +57,7 @@ let mavenOverlay = document.getElementById('maven-overlay');
 let unityOverlay = document.getElementById('unity-overlay');
 let nodeOverlay = document.getElementById('node-overlay');
 let awsOverlay = document.getElementById('aws-overlay');
+let azureOverlay = document.getElementById('azure-overlay');
 
 jammmingHeadline.addEventListener('click', () => {
     if (jammmingRightArrow.style.display == 'none') {
@@ -156,3 +158,5 @@ nodeLogo.addEventListener('mouseover', () => {nodeOverlay.style.display = 'flex'
 nodeLogo.addEventListener('mouseout', () => {nodeOverlay.style.display = 'none';});
 awsLogo.addEventListener('mouseover', () => {awsOverlay.style.display = 'flex';});
 awsLogo.addEventListener('mouseout', () => {awsOverlay.style.display = 'none';});
+azureLogo.addEventListener('mouseover', () => {azureOverlay.style.display = 'flex';});
+azureLogo.addEventListener('mouseout', () => {azureOverlay.style.display = 'none';});

@@ -164,6 +164,8 @@ nav ul li {
 .skills .image-container .logo-container {
     position: relative;
 
+    flex: 1;
+    flex-wrap: wrap;
     max-width: 8%;
 
     margin: 0 1rem;
